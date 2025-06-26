@@ -1,0 +1,20 @@
+/* static/style.css */
+
+/* Using a Google Font for better typography */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom style for selected radio button labels for better user feedback */
+input[type="radio"]:checked + span {
+    font-weight: 600; /* Make text bold */
+}
+
+input[type="radio"]:checked:hover + span {
+    color: inherit; /* Prevent color change on hover when selected */
+}
+
+label:has(input[type="radio"]:checked) {
+    background-color: #eef2ff; /* indigo-50 */
+    border-color: #818cf8; /* indigo-400 */
+}
